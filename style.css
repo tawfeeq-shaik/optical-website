@@ -1,0 +1,261 @@
+*{
+     margin: 0;
+     scroll-behavior: smooth;
+}
+body, h1, h2, h3, p, ul, li, a, button, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    
+}
+/*header*/
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+}
+header .container {
+    
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    
+
+    
+
+}
+.navigation{
+    display: flex;
+    gap: 15px;
+    width: 100vw;
+    @media (max-width:600px) {
+        padding-top: 20px;
+        flex-wrap: wrap; 
+        justify-content: left;
+    }
+}
+header .navigation {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    justify-content: end;
+    width: 80vw;
+}
+header .navigation li {
+    margin: 0 18px;
+    text-align: center;
+}
+header .navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+    display: flex;
+}
+header .navigation a:hover {
+    color: #ff9900;
+}
+.anihead
+{
+    display: flex;
+    width: 100vw;
+    @media (max-width:600px) {
+        flex-direction: column;
+    }
+    
+
+
+}
+.anime{
+    height: 40vh; background-color: darkgray;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    @media (max-width: 600px) {
+        display:flex ;
+        width: 110vw;
+        
+    }
+
+}
+.anime-text h1{
+    font-size: 50px;
+    color:#fff;
+    padding: 20px;
+}
+.anime-text p{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.anime-text .btn{
+    background-color: #ff9900;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    
+    margin-left: 250px;
+    text-align: center;
+    @media (max-width: 400px) {
+        margin: 0px;
+    }
+    
+}
+    
+
+.products{
+    height: 35vw; background-color: #f4f4f4;
+    @media (max-width:600px) {
+        height: 200vh;
+    }
+    
+}
+.pro-grid{
+    display: flex;
+    width: 60vw;
+    margin: auto;
+    gap: 40px;
+    @media (max-width: 600px) {
+        flex-direction: column;
+        
+    }
+}
+.products h2{
+    text-align: center;
+    font-size: xx-large;
+    padding: 20px;
+}
+.product-card h3,p{
+    text-align: center;
+    text-decoration: none;
+    
+
+}
+.product-card button{
+    margin-left: 60px;
+    border: 2px solid black;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+.categories {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #fff;
+  
+    display: flex;
+    flex-direction: column;
+}
+.categories h2 {
+    text-align: center;
+    font-size: xx-large;
+    padding: 20px;
+}
+
+
+.categories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+.category-card {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    
+}
+.category-card:hover {
+    transform: scale(1.05);
+    background-color: #ff9900;
+    color: #fff;
+}
+.category-card a{
+    text-decoration: none;
+    color: black;
+}
+.contact {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.contact form {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact input, .contact textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.contact button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.contact button:hover {
+    background-color: #ff9900;
+}
+.product-card a{
+    text-decoration: none;
+    color: #fff;
+}
+footer{
+    padding: 10px;
+}
+.anime-text{
+    @media (max-width: 600px) {
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        flex-direction: column;
+        
+    }
+}
+
